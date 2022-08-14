@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 100vw) and (min-width: 821px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Red-Hat-Display, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: var(--Pale-blue);
+  }
+
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .bg-img {
+    width: 100vw;
+  }
+
+  .mob {
+    display: none;
+  }
+
+  .main {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    padding: 25px;
+  }
+
+  .container {
+    background-color: white;
+    height: auto;
+    width: 350px;
+    border-radius: 15px;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 17px;
+    text-align: center;
+    color: var(--Dark-blue);
+    font-size: 1.4em;
+    font-weight: 800;
+  }
+
+  .para {
+    text-align: center;
+    color: var(--Desaturated-blue);
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 1.5em;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+  }
+
+  .plan {
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .annual {
+    font-size: 0.8em;
+    font-weight: 800;
+    margin-bottom: 5px;
+    color: var(--Dark-blue);
+  }
+
+  .price {
+    font-size: 0.8em;
+    color: var(--Desaturated-blue);
+  }
+
+  .sthree {
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+
+  .sthree:hover {
+    cursor: pointer;
+  }
+
+  .btns {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border: none;
+    color: white;
+    background-color: var(--Bright-blue);
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    transition: 300ms ease-in-out;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    background-color: rgb(44, 44, 158);
+  }
+
+  button {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+
+  .cancel {
+    font-size: 0.75em;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+    color: var(--Desaturated-blue);
+    font-weight: 800;
+  }
+
+  .cancel:hover {
+    cursor: pointer;
+  }
+}
