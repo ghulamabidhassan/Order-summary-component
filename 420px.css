@@ -46,6 +46,8 @@
     height: auto;
     width: auto;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
 
   .hero-img {
@@ -122,10 +124,13 @@
     background-color: var(--Bright-blue);
     letter-spacing: 0.2px;
     font-weight: 700;
+    transition: 300ms ease-in-out;
   }
 
   .btn:hover {
     cursor: pointer;
+    transition: 300ms ease-in-out;
+    background-color: rgb(44, 44, 158);
   }
 
   button {
